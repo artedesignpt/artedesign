@@ -30,38 +30,38 @@ export default function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="font-bold mb-4">Produtos</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><Link href="#albuns" className="hover:text-white transition">Álbuns Premium</Link></li>
-              <li><Link href="#quadros" className="hover:text-white transition">Quadros Fotográficos</Link></li>
-              <li><Link href="#albuns" className="hover:text-white transition">Edições Limitadas</Link></li>
+            <h4 className="font-light mb-4 text-gray-900">Produtos</h4>
+            <ul className="space-y-2">
+              <li><Link href="/produtos" className="text-gray-600 hover:text-gray-900 transition font-light">Álbuns Premium</Link></li>
+              <li><Link href="/produtos" className="text-gray-600 hover:text-gray-900 transition font-light">Quadros Fotográficos</Link></li>
+              <li><Link href="/produtos" className="text-gray-600 hover:text-gray-900 transition font-light">Edições Limitadas</Link></li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h4 className="font-bold mb-4">Empresa</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><Link href="#" className="hover:text-white transition">Sobre Nós</Link></li>
-              <li><Link href="#" className="hover:text-white transition">Contacto</Link></li>
-              <li><Link href="#" className="hover:text-white transition">FAQs</Link></li>
+            <h4 className="font-light mb-4 text-gray-900">Empresa</h4>
+            <ul className="space-y-2">
+              <li><Link href="/sobre" className="text-gray-600 hover:text-gray-900 transition font-light">Sobre Nós</Link></li>
+              <li><Link href="/contacto" className="text-gray-600 hover:text-gray-900 transition font-light">Contacto</Link></li>
+              <li><Link href="/faq" className="text-gray-600 hover:text-gray-900 transition font-light">FAQs</Link></li>
             </ul>
           </div>
 
           {/* Legal */}
           <div>
-            <h4 className="font-bold mb-4">Legal</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><Link href="#" className="hover:text-white transition">Política de Privacidade</Link></li>
-              <li><Link href="#" className="hover:text-white transition">Termos de Serviço</Link></li>
-              <li><Link href="#" className="hover:text-white transition">Cookies</Link></li>
+            <h4 className="font-light mb-4 text-gray-900">Legal</h4>
+            <ul className="space-y-2">
+              <li><Link href="/privacidade" className="text-gray-600 hover:text-gray-900 transition font-light">Política de Privacidade</Link></li>
+              <li><Link href="/termos" className="text-gray-600 hover:text-gray-900 transition font-light">Termos de Serviço</Link></li>
+              <li><Link href="/cookies" className="text-gray-600 hover:text-gray-900 transition font-light">Cookies</Link></li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
-          <p className="text-gray-400 text-center">
-            &copy; 2024 ArteDesign. Todos os direitos reservados. | LFMCORPORATE
+        <div className="border-t border-gray-200 pt-8">
+          <p className="text-gray-600 text-center font-light text-sm">
+            &copy; 2024 ArteDesign. Todos os direitos reservados.
           </p>
         </div>
       </div>

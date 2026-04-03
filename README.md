@@ -241,7 +241,7 @@ taskkill /PID [PID] /F
 
 ## 📄 Licença
 
-Propriedade de LFMCORPORATE. Todos os direitos reservados.
+© 2024 ArteDesign. Todos os direitos reservados.
 
 ---
 
