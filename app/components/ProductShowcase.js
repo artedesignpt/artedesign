@@ -42,8 +42,11 @@ export default function ProductShowcase() {
   return (
     <section id="albuns" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">Nossa Coleção Premium</h2>
-        <p className="text-xl text-gray-600">Cada peça é uma obra de arte</p>
+        <div className="mb-4">
+          <p className="text-sm font-light tracking-widest text-gray-500 uppercase">Seleção Curada</p>
+        </div>
+        <h2 className="text-4xl md:text-5xl font-light mb-6 text-gray-900">Coleção Exclusiva</h2>
+        <p className="text-lg text-gray-600 font-light">Cada criação reflete nossa dedicação à qualidade e ao detalhe</p>
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

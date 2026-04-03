@@ -4,22 +4,25 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-white border-t border-gray-200 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-              ArteDesign
-            </h3>
-            <p className="text-gray-400">
-              Criando memórias em formato premium
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-8 border border-gray-900 flex items-center justify-center">
+                <span className="text-sm font-light">A</span>
+              </div>
+              <span className="font-light tracking-wide text-gray-900">ARTEDESIGN</span>
+            </div>
+            <p className="text-sm text-gray-600 font-light mb-4">
+              Preservando memórias com elegância e qualidade premium
             </p>
-            <div className="flex space-x-4 mt-4">
-              <a href="https://instagram.com" className="text-gray-400 hover:text-pink-400 transition">
+            <div className="flex space-x-4">
+              <a href="https://instagram.com" className="text-gray-600 hover:text-gray-900 transition text-sm font-light">
                 Instagram
               </a>
-              <a href="https://facebook.com" className="text-gray-400 hover:text-blue-400 transition">
+              <a href="https://facebook.com" className="text-gray-600 hover:text-gray-900 transition text-sm font-light">
                 Facebook
               </a>
             </div>

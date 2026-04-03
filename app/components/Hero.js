@@ -4,53 +4,61 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-100 via-white to-pink-100 opacity-70"></div>
-
-      {/* Decorative shapes */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+    <section className="relative min-h-screen flex items-center justify-center bg-white">
+      {/* Subtle background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 bg-clip-text text-transparent">
-          Transforme Suas Memórias em Arte
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        {/* Subtitle */}
+        <div className="mb-6">
+          <p className="text-sm font-light tracking-widest text-gray-500 uppercase">
+            Coleção Premium
+          </p>
+        </div>
+
+        {/* Main Heading */}
+        <h1 className="text-5xl md:text-7xl font-light mb-8 text-gray-900 leading-tight">
+          Preserve Suas<br />Memórias com<br />Elegância
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
-          Álbuns personalizados premium e quadros fotográficos de alta qualidade.
-          Cada imagem merece ser mais que uma foto.
+        {/* Subheading */}
+        <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto font-light">
+          Álbuns personalizados e quadros fotográficos premium.
+          Cada momento merece ser preservado como arte.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Link
             href="#albuns"
-            className="bg-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-purple-700 transition transform hover:scale-105"
+            className="px-8 py-3 border border-gray-900 text-gray-900 font-light hover:bg-gray-900 hover:text-white transition"
           >
             Explorar Álbuns
           </Link>
           <Link
             href="#quadros"
-            className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold text-lg border-2 border-purple-600 hover:bg-purple-50 transition"
+            className="px-8 py-3 bg-gray-900 text-white font-light hover:bg-gray-800 transition"
           >
             Ver Quadros
           </Link>
         </div>
 
-        {/* Trust badges */}
-        <div className="flex flex-wrap justify-center gap-6 text-gray-600">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">⭐</span>
-            <span>4.9/5 Avaliação</span>
+        {/* Features */}
+        <div className="flex flex-col sm:flex-row gap-8 justify-center text-sm text-gray-600 font-light">
+          <div>
+            <p className="text-gray-900 font-normal mb-1">4.9/5</p>
+            <p>Clientes Satisfeitos</p>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">🚚</span>
-            <span>Envio Gratuito</span>
+          <div className="hidden sm:block w-px bg-gray-300"></div>
+          <div>
+            <p className="text-gray-900 font-normal mb-1">Premium</p>
+            <p>Qualidade Garantida</p>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">✨</span>
-            <span>Qualidade Premium</span>
+          <div className="hidden sm:block w-px bg-gray-300"></div>
+          <div>
+            <p className="text-gray-900 font-normal mb-1">Portugal</p>
+            <p>Entrega Rápida</p>
           </div>
         </div>
       </div>
